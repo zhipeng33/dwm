@@ -13,7 +13,7 @@ static const Bool viewontag         = True;     /* Switch view on tag switch */
 static const char *fonts[] = {
   "monospace:size=12",
   "Source Code Pro:size=12:type=Regular:antialias=true:autohint=true",
-  "Symbols Nerd Font:pixelsize=10:tyle=2048-em:autohint=true:antialias=true"
+  "Symbols Nerd Font:pixelsize=14:tyle=2048-em:autohint=true:antialias=true"
 };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
@@ -35,9 +35,10 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "爵", "", "", "", "", "", "", "" };
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 static const int momentaryalttags = 0; /* 1 means alttags will show only when key is held down*/
+
 
 static const Rule rules[] = {
 	/* xprop(1):
