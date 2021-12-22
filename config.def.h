@@ -8,7 +8,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[] = {
   "monospace:size=12",
   "Source Code Pro:size=12:type=Regular:antialias=true:autohint=true",
-  "Symbols Nerd Font:pixelsize=10:tyle=2048-em:autohint=true:antialias=true"
+  "Symbols Nerd Font:pixelsize=14:tyle=2048-em:autohint=true:antialias=true"
 };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
@@ -23,7 +23,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "爵", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
