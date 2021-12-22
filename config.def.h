@@ -5,7 +5,11 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
+static const char *fonts[] = {
+  "monospace:size=12",
+  "Source Code Pro:size=12:type=Regular:antialias=true:autohint=true",
+  "Symbols Nerd Font:pixelsize=10:tyle=2048-em:autohint=true:antialias=true"
+};
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -94,7 +98,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },	
+	{ MODKEY,                       XK_c,      spawn,          SHCMD("google-chrome-stable --proxy-server=http://127.0.0.1:8889") },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("export https_proxy=http://127.0.0.1:8889;emacs") },
 };
 
 /* button definitions */
