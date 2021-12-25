@@ -15,14 +15,15 @@ static const char *fonts[] = {
   "Source Code Pro:size=12:type=Regular:antialias=true:autohint=true",
   "Symbols Nerd Font:pixelsize=10:tyle=2048-em:autohint=true:antialias=true"
 };
-static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
-static const unsigned int baralpha = 0xd0;
+static const char dmenufont[]         = "monospace:size=10";
+static const char col_gray1[]         = "#222222";
+static const char col_gray2[]         = "#444444";
+static const char col_gray3[]         = "#bbbbbb";
+static const char col_gray4[]         = "#eeeeee";
+static const char col_cyan[]          = "#005577";
+static const unsigned int baralpha    = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -44,10 +45,12 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     iscentered   isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            0,           1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           0,           -1 },
-	{ "electron-netease-cloud-music",  NULL,       NULL,       1 << 8,       1,           1,           -1 },
+	/* class                           instance    title       tags mask     iscentered   isfloating   monitor */
+	{ "Gimp",                          NULL,       NULL,       0,            0,           1,           -1 },
+	{ "code",                          NULL,       NULL,       1 << 2,       0,           0,           -1 },
+	{ "firefox",                       NULL,       NULL,       1 << 1,       0,           0,           -1 },
+	{ "google-chrome-stable",          NULL,       NULL,       1 << 1,       0,           0,           -1 },
+	{ "electron-netease-cloud-music",  NULL,       NULL,       1 << 4,       1,           1,           -1 },
 };
 
 /* layout(s) */
