@@ -126,7 +126,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },	
 	{ MODKEY,                       XK_n,      togglealttag,   {0} },
-	{ MODKEY,                       XK_c,      spawn,          SHCMD("google-chrome-stable --proxy-server=http://127.0.0.1:8889") },
+	{ MODKEY,                       XK_c,      spawn,          SHCMD("firefox") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("export https_proxy=http://127.0.0.1:8889;emacs") },
 };
 
