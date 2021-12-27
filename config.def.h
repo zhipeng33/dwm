@@ -45,12 +45,12 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class                           instance    title       tags mask     iscentered   isfloating    switchtotag   monitor */
-    { "Gimp",                          NULL,       NULL,       0,            0,           1,            0,            -1 },
-    { "code",                          NULL,       NULL,       1 << 3,       0,           0,            1,            -1 },
-	{ "firefox",                       NULL,       NULL,       1 << 1,       0,           0,            1,            -1 },
-	{ "google-chrome-stable",          NULL,       NULL,       1 << 1,       0,           0,            0,            -1 },
-	{ "electron-netease-cloud-music",  NULL,       NULL,       1 << 4,       1,           1,            1,            -1 },
+	/* class                           instance    title       tags mask   isfloating   switchtotag   monitor */
+    { "Gimp",                          NULL,       NULL,       0,          1,            0,            -1 },
+    { "code",                          NULL,       NULL,       1 << 3,     0,            1,            -1 },
+	{ "firefox",                       NULL,       NULL,       1 << 1,     0,            1,            -1 },
+	{ "google-chrome-stable",          NULL,       NULL,       1 << 1,     0,            0,            -1 },
+	{ "electron-netease-cloud-music",  NULL,       NULL,       1 << 4,     1,            1,            -1 },
 };
 
 /* layout(s) */
