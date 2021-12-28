@@ -1,6 +1,6 @@
 #!/bin/bash
 
-picom &
+picom -cb &
 dunst &
 fcitx5 &
 clight &
