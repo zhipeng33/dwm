@@ -32,15 +32,8 @@ export IDENTIFIER="unicode"
 . "$DIR/bar-functions/dwm_resources.sh"
 . "$DIR/bar-functions/dwm_version.sh"
 
-# wallpaper() {
-# 	while true
-# 	do
-# 		# ~/mywallpapers/T5是我存放壁纸的文件夹，换成你自己的
-feh --bg-fill --no-fehbg --randomize ~/czp-Personal_data/030-Public/032-dwm &
-# 		# 每15秒自动切换壁纸
-# 		sleep 15
-# 	done
-# }
+# Wallpaper
+feh --bg-fill --no-fehbg --randomize ~/czp-Personal_data/030-Public/032-dwm_wallpaper &
 
 # Update dwm status bar every second
 noe_time() {
