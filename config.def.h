@@ -51,6 +51,7 @@ static const Rule rules[] = {
 	{ "code",                          NULL,       NULL,       1 << 2,     1,            0,            -1 },
 	{ "fcitx5",                        NULL,       NULL,       1 << 4,     1,            1,            -1 },
 	{ "qv2ray",                        NULL,       NULL,       1 << 4,     1,            1,            -1 },
+	{ "listen1",                       NULL,       NULL,       1 << 4,     1,            1,            -1 },
 	{ "firefox",                       NULL,       NULL,       1 << 1,     1,            0,            -1 },
 	{ "flameshot",                     NULL,       NULL,       0,          0,            1,            -1 },
 	{ "google-chrome-stable",          NULL,       NULL,       1 << 1,     1,            0,            -1 },
