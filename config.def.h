@@ -13,7 +13,7 @@ static const int sidepad            = 20;       /* horizontal padding of bar */
 static const char *fonts[] = {
   "monospace:size=12",
   "Source Code Pro:size=12:type=Regular:antialias=true:autohint=true",
-  "Symbols Nerd Font:pixelsize=10:tyle=2048-em:autohint=true:antialias=true"
+  "Symbols Nerd Font:pixelsize=14:tyle=2048-em:autohint=true:antialias=true"
 };
 static const char dmenufont[]         = "monospace:size=10";
 static const char col_gray1[]         = "#222222";
@@ -36,9 +36,10 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "爵", "", "", "", "", "", "", "" };
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 static const int momentaryalttags = 0; /* 1 means alttags will show only when key is held down*/
+
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -47,19 +48,19 @@ static const Rule rules[] = {
 	 */
 	/* class                           instance    title       tags mask   isfloating   switchtotag   monitor */
     { "Gimp",                          NULL,       NULL,       0,          1,            0,            -1 },
-    { "code",                          NULL,       NULL,       0,          0,            1,            -1 },
+	{ "code",                          NULL,       NULL,       1 << 2,     1,            0,            -1 },
 	{ "fcitx5",                        NULL,       NULL,       1 << 4,     1,            1,            -1 },
 	{ "qv2ray",                        NULL,       NULL,       1 << 4,     1,            1,            -1 },
-	{ "firefox",                       NULL,       NULL,       0,          0,            0,            -1 },
-	{ "flameshot",                     NULL,       NULL,       0,          1,            0,            -1 },
-	{ "google-chrome-stable",          NULL,       NULL,       0,          0,            0,            -1 },
+	{ "firefox",                       NULL,       NULL,       1 << 1,     1,            0,            -1 },
+	{ "flameshot",                     NULL,       NULL,       0,          0,            1,            -1 },
+	{ "google-chrome-stable",          NULL,       NULL,       1 << 1,     1,            0,            -1 },
 	{ "electron-netease-cloud-music",  NULL,       NULL,       1 << 4,     1,            1,            -1 },
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
-static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const float mfact        = 0.55; /* factor of master area size [0.05..0.95] */
+static const int nmaster        = 1;    /* number of clients in master area */
+static const int resizehints    = 0;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
@@ -70,7 +71,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
