@@ -47,9 +47,12 @@ static const Rule rules[] = {
 	 */
 	/* class                           instance    title       tags mask   isfloating   switchtotag   monitor */
     { "Gimp",                          NULL,       NULL,       0,          1,            0,            -1 },
-    { "code",                          NULL,       NULL,       1 << 3,     0,            1,            -1 },
-	{ "firefox",                       NULL,       NULL,       1 << 1,     0,            0,            -1 },
-	{ "google-chrome-stable",          NULL,       NULL,       1 << 1,     0,            0,            -1 },
+    { "code",                          NULL,       NULL,       0,          0,            1,            -1 },
+	{ "fcitx5",                        NULL,       NULL,       1 << 4,     1,            1,            -1 },
+	{ "qv2ray",                        NULL,       NULL,       1 << 4,     1,            1,            -1 },
+	{ "firefox",                       NULL,       NULL,       0,          0,            0,            -1 },
+	{ "flameshot",                     NULL,       NULL,       0,          1,            0,            -1 },
+	{ "google-chrome-stable",          NULL,       NULL,       0,          0,            0,            -1 },
 	{ "electron-netease-cloud-music",  NULL,       NULL,       1 << 4,     1,            1,            -1 },
 };
 
@@ -139,7 +142,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },	
+	{ MODKEY,                       XK_Escape, quit,           {0} },	
 	{ MODKEY,                       XK_n,      togglealttag,   {0} },
 	{ MODKEY,                       XK_c,      spawn,          SHCMD("firefox") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("export https_proxy=http://127.0.0.1:8889;emacs") },
