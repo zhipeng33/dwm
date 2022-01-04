@@ -14,11 +14,13 @@ dwm_networkmanager () {
 
 		printf "%s" "$SEP1"
 		if [ "$IDENTIFIER" = "unicode" ]; then
-			printf " |  %s 𣏕 %s" "$CONNAME" "$PRIVATE"
+			printf " |  %s" "$CONNAME"
+			# printf " 𣏕 %s" "$PRIVATE"
 			# printf " |  %s" "$PUBLIC"
 		else
-			printf " | NET %s%s" "$CONNAME" "$PRIVATE"
-			# printf " | %s" "$PUBLIC"
+			printf " | NET %s" "$CONNAME"
+			# printf " %s" "$PRIVATE"
+			# printf " | %s" "$PUBLIC
 		fi
 		printf "%s" "$SEP2"
 	else
@@ -28,10 +30,12 @@ dwm_networkmanager () {
 
 		printf "%s" "$SEP1"
 		if [ "$IDENTIFIER" = "unicode" ]; then
-			printf " |  %s 𣏕 %s" "$CONNAME" "$PRIVATE"
+			printf " |  %s" "$CONNAME"
+			# printf " 𣏕 %s" "$PRIVATE"
 			# printf " |  %s" "$PUBLIC"
 		else
-			printf " | NET %s%s" "$CONNAME" "$PRIVATE"
+			printf " | NET %s" "$CONNAME"
+			# printf " %s" "$PRIVATE"
 			# printf " | %s" "$PUBLIC"
 		fi
 		printf "%s" "$SEP2"
