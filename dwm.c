@@ -260,7 +260,7 @@ static const char autostartblocksh[] = "autostart_blocking.sh";
 static const char autostartsh[] = "autostart.sh";
 static const char broken[] = "broken";
 static const char dwmdir[] = "autostart";
-static const char localshare[] = "./czp-Personal_data/010-Documents/013-Profile/dwm/";
+static const char localshare[] = "./czp-Personal_data/010-Documents/013-Profile/suckless/dwm/";
 static char stext[256];
 static int screen;
 static int sw, sh;           /* X display screen geometry width, height */
